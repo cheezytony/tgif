@@ -1,5 +1,5 @@
-import { Box, Button, HStack, Text, VStack } from '@chakra-ui/react';
-import { useEffect, useRef, useState } from 'react';
+import { Button, HStack, Text, VStack } from '@chakra-ui/react';
+import { useRef, useState } from 'react';
 import { useCountdown } from '../hooks/misc';
 
 export default function NameACountry() {
