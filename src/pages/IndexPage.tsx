@@ -16,7 +16,7 @@ export default function IndexPage() {
       templateColumns={{
         base: '1',
         md: 'repeat(2, 1fr)',
-        lg: 'repeat(3, 1fr)'
+        lg: 'repeat(3, 1fr)',
       }}
     >
       <GridItem>
@@ -49,7 +49,12 @@ export default function IndexPage() {
                 2+ Players
               </Text>
             </HStack>
-            <VStack align="stretch" h="65%" justify="space-between" mt="auto">
+            <VStack
+              align="stretch"
+              h={{ base: '70%', md: '65%' }}
+              justify="space-between"
+              mt="auto"
+            >
               <VStack align="stretch">
                 <Text
                   color="white"
@@ -84,7 +89,7 @@ export default function IndexPage() {
                   ringColor="blackAlpha.300"
                   to="/name-a-country"
                   _hover={{
-                    bg: '#007bff'
+                    bg: '#007bff',
                   }}
                 >
                   Play Now
